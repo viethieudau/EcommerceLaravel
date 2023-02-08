@@ -15,3 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [Front\HomeController::class, 'index']);
+Route::get('/shop/product/{id}', [Front\ShopController::class, 'show']);
+

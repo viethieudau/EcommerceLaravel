@@ -29,15 +29,15 @@ class Product extends Model
 
     public function productDetails()
     {
-        return $this->hasMany(productDetail::class, 'product_id', 'id');
+        return $this->hasMany(ProductDetail::class, 'product_id', 'id');
     }
 
     public function productComments()
     {
-        return $this->hasMany(productComment::class, 'product_id', 'id');
+        return $this->hasMany(ProductComment::class, 'product_id', 'id');
     }
     public function orderDetails()
     {
-        return $this->hasMany(orderDetail::class, 'product_id', 'id');
+        return $this->hasMany(OrderDetail::class, 'product_id', 'id');
     }
 }
