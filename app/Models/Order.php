@@ -12,8 +12,8 @@ class Order extends Model
     protected $primarykey = 'id';
     protected $guarded = [];
 
-    public function oderDetails()
+    public function orderDetails()
     {
-        return $this->hasMany(OderDetail::class, 'order_id', 'id');
+        return $this->hasMany(OrderDetail::class, 'order_id', 'id');
     }
 }

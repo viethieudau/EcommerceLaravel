@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class OrderDetail extends Model
 {
     use HasFactory;
-    protected $table = 'order_details';
+    protected $table = 'orders_details';
     protected $primarykey = 'id';
     protected $guarded = [];
 
